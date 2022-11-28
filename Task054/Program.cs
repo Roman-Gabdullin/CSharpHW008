@@ -53,7 +53,7 @@ int[,] FillMatrix(int[,] matrix, int minvalue, int maxvalue)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = new Random().Next(minvalue, maxvalue);
+            matrix[i, j] = new Random().Next(minvalue, maxvalue+1);
         }
     }
     return matrix;
